@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>오늘의 기도 · Today's Prayer · 今日的祷告</title>
+<meta name="description" content="살아계신 하나님 — 다국어 음성 기도 (한국어, English, 中文)" />
+<style>
+  :root {
+    --bg: #faf7f2;
+    --surface: #ffffff;
+    --text: #2c2a26;
+    --text-soft: #5b574f;
+    --accent: #8b6f47;
+    --accent-soft: #d4c4a8;
+    --border: #e8e2d6;
+    --verse-bg: #f3ede1;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Pretendard",
+                 "Apple SD Gothic Neo", "맑은 고딕", "Noto Sans KR",
+                 "Noto Sans SC", sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  header h1 .accent { color: var(--accent); }
+  header .subtitle {
+    color: var(--text-soft);
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 0.05em;
+  }
+  header .date {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .lang-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .lang-flag {
+    width: 28px;
+    height: 20px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: var(--verse-bg);
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .lang-name {
+    font-weight: 600;
+  }
+  .lang-name-sub {
+    color: var(--text-soft);
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 6px;
+  }
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: var(--verse-bg);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.15s;
+  }
+  .download-btn:hover { background: var(--accent-soft); }
+
+  audio {
+    width: 100%;
+    margin: 0 0 20px;
+    border-radius: 8px;
+  }
+  audio::-webkit-media-controls-panel {
+    background-color: var(--verse-bg);
+  }
+
+  .prayer-text {
+    color: var(--text);
+    font-size: 15px;
+    margin: 0 0 16px;
+    white-space: pre-line;
+  }
+  .verse {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: var(--verse-bg);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .verse-ref {
+    display: block;
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .verse-text {
+    color: var(--text-soft);
+    font-style: italic;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-soft);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  footer .ornament {
+    color: var(--accent-soft);
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 480px) {
+    .container { padding: 32px 16px 56px; }
+    header h1 { font-size: 24px; }
+    .card { padding: 20px; }
+    .card-header { gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>오늘의 <span class="accent">기도</span></h1>
+    <p class="subtitle">Today's Prayer · 今日的祷告</p>
+    <div class="date">2026 · 05 · 02</div>
+  </header>
+
+  <!-- KOREAN -->
+  <article class="card">
+    <div class="card-header">
+      <div class="lang-label">
+        <span class="lang-flag">KR</span>
+        <span><span class="lang-name">한국어</span><span class="lang-name-sub">Korean</span></span>
+      </div>
+      <a class="download-btn" href="0502_ko.mp3" download>↓ MP3 다운로드</a>
+    </div>
+    <audio controls preload="metadata">
+      <source src="0502_ko.mp3" type="audio/mpeg" />
+      <source src="0502_ko.wav" type="audio/wav" />
+      이 브라우저는 오디오 재생을 지원하지 않습니다.
+    </audio>
+    <p class="prayer-text">살아계신 하나님, 새로운 하루를 시작하며 주님의 신실하심 안에서 안식하고 고요한 신뢰로 걸어가게 하여 주옵소서. 우리의 마음이 많은 염려로 가득할 때마다 주님의 임재 안에 있는 평안으로 다시 돌아오게 하옵소서. 조급함과 불안에 이끌리지 않게 하시고, 주님 안에 뿌리내린 든든한 마음으로 오늘을 살아가게 하여 주옵소서. 맡겨진 모든 책임에는 은혜를 더하시고, 모든 선택에는 지혜를 주시며, 모든 대화에는 친절함이 흐르게 하여 주옵소서. 작은 순간들 속에서도 주님의 선하심을 발견하게 하시고, 오늘 우리의 삶이 주님께 속한 사람들의 고요한 강건함을 나타내게 하여 주옵소서. 예수님의 이름으로 기도드립니다. 아멘.</p>
+    <div class="verse">
+      <span class="verse-ref">이사야 26:3</span>
+      <span class="verse-text">주께서 심지가 견고한 자를 평강하고 평강하도록 지키시리니 이는 그가 주를 신뢰함이니이다.</span>
+    </div>
+  </article>
+
+  <!-- ENGLISH -->
+  <article class="card">
+    <div class="card-header">
+      <div class="lang-label">
+        <span class="lang-flag">EN</span>
+        <span><span class="lang-name">English</span><span class="lang-name-sub">영어</span></span>
+      </div>
+      <a class="download-btn" href="0502_en.mp3" download>↓ Download MP3</a>
+    </div>
+    <audio controls preload="metadata">
+      <source src="0502_en.mp3" type="audio/mpeg" />
+      <source src="0502_en.wav" type="audio/wav" />
+      Your browser does not support audio playback.
+    </audio>
+    <p class="prayer-text">Living God, as we enter this new day, teach us to rest in Your faithfulness and walk in quiet trust. When our minds are filled with many concerns, bring us back to the peace found in Your presence. Help us not to be ruled by hurry or anxiety, but to move through this day with steady hearts anchored in You. Give us grace for every responsibility, wisdom for every choice, and kindness in every conversation. May we notice Your goodness in small moments, and may our lives today reflect the calm strength of those who belong to You. In Jesus' name, we pray. Amen.</p>
+    <div class="verse">
+      <span class="verse-ref">Isaiah 26:3</span>
+      <span class="verse-text">You keep him in perfect peace whose mind is stayed on You, because he trusts in You.</span>
+    </div>
+  </article>
+
+  <!-- CHINESE -->
+  <article class="card">
+    <div class="card-header">
+      <div class="lang-label">
+        <span class="lang-flag">中</span>
+        <span><span class="lang-name">中文</span><span class="lang-name-sub">중국어</span></span>
+      </div>
+      <a class="download-btn" href="0502_zh-cn.mp3" download>↓ 下载 MP3</a>
+    </div>
+    <audio controls preload="metadata">
+      <source src="0502_zh-cn.mp3" type="audio/mpeg" />
+      <source src="0502_zh-cn.wav" type="audio/wav" />
+      您的浏览器不支持音频播放。
+    </audio>
+    <p class="prayer-text">永生的神，当我们迎接新的一天时，求祢教导我们安息在祢的信实里，以宁静的信靠与祢同行。当我们的心被许多忧虑充满时，求祢带我们回到祢同在的平安中。求祢不让我们被忙乱与焦虑所辖制，使我们今日以扎根于祢的稳定之心度过每一刻。在每一项责任上加添祢的恩典，在每一个抉择上赐下祢的智慧，在每一次对话中流露温柔与良善。愿我们在微小的时刻里也能看见祢的美善，愿我们今日的生命彰显出属祢之人那份宁静的刚强。奉耶稣基督的名祷告。阿们。</p>
+    <div class="verse">
+      <span class="verse-ref">以赛亚书 26:3</span>
+      <span class="verse-text">坚心倚赖你的，你必保守他十分平安，因为他倚靠你。</span>
+    </div>
+  </article>
+
+  <footer>
+    <div class="ornament">✦ ✦ ✦</div>
+    <div>In Jesus' name we pray · 예수님의 이름으로 · 奉耶稣基督的名</div>
+  </footer>
+
+</div>
+</body>
+</html>
